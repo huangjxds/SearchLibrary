@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB6D94311DE198D20083638C /* postings.c in Sources */ = {isa = PBXBuildFile; fileRef = BB6D942F1DE198D20083638C /* postings.c */; };
 		BBCF21291DD3527300666568 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BBCF21281DD3527300666568 /* main.c */; };
+		BBCF21361DD3533600666568 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = BBCF21341DD3533600666568 /* util.c */; };
+		BBCF21391DD3559900666568 /* search_library.c in Sources */ = {isa = PBXBuildFile; fileRef = BBCF21371DD3559900666568 /* search_library.c */; };
+		BBCF213C1DD3577B00666568 /* sl_pinyincode.c in Sources */ = {isa = PBXBuildFile; fileRef = BBCF213A1DD3577B00666568 /* sl_pinyincode.c */; };
+		BBCFE5541DEAA7D3003EE6A6 /* search.c in Sources */ = {isa = PBXBuildFile; fileRef = BBCFE5521DEAA7D3003EE6A6 /* search.c */; };
+		BBCFE5571DEABB61003EE6A6 /* token.c in Sources */ = {isa = PBXBuildFile; fileRef = BBCFE5551DEABB61003EE6A6 /* token.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BB6D942F1DE198D20083638C /* postings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = postings.c; sourceTree = "<group>"; };
+		BB6D94301DE198D20083638C /* postings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postings.h; sourceTree = "<group>"; };
 		BBCF21251DD3527300666568 /* SearchLibrary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SearchLibrary; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBCF21281DD3527300666568 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		BBCF21301DD352F500666568 /* utarray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utarray.h; sourceTree = "<group>"; };
+		BBCF21311DD352F500666568 /* uthash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uthash.h; sourceTree = "<group>"; };
+		BBCF21321DD352F500666568 /* utlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utlist.h; sourceTree = "<group>"; };
+		BBCF21331DD352F500666568 /* utstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utstring.h; sourceTree = "<group>"; };
+		BBCF21341DD3533600666568 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		BBCF21351DD3533600666568 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		BBCF21371DD3559900666568 /* search_library.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = search_library.c; sourceTree = "<group>"; };
+		BBCF21381DD3559900666568 /* search_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = search_library.h; sourceTree = "<group>"; };
+		BBCF213A1DD3577B00666568 /* sl_pinyincode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sl_pinyincode.c; sourceTree = "<group>"; };
+		BBCF213B1DD3577B00666568 /* sl_pinyincode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sl_pinyincode.h; sourceTree = "<group>"; };
+		BBCFE5521DEAA7D3003EE6A6 /* search.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = search.c; sourceTree = "<group>"; };
+		BBCFE5531DEAA7D3003EE6A6 /* search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = search.h; sourceTree = "<group>"; };
+		BBCFE5551DEABB61003EE6A6 /* token.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = token.c; sourceTree = "<group>"; };
+		BBCFE5561DEABB61003EE6A6 /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +79,33 @@
 		BBCF21271DD3527300666568 /* SearchLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				BBCF212F1DD352F500666568 /* include */,
 				BBCF21281DD3527300666568 /* main.c */,
+				BBCF21341DD3533600666568 /* util.c */,
+				BBCF21351DD3533600666568 /* util.h */,
+				BBCF21371DD3559900666568 /* search_library.c */,
+				BBCF21381DD3559900666568 /* search_library.h */,
+				BBCF213A1DD3577B00666568 /* sl_pinyincode.c */,
+				BBCF213B1DD3577B00666568 /* sl_pinyincode.h */,
+				BB6D942F1DE198D20083638C /* postings.c */,
+				BB6D94301DE198D20083638C /* postings.h */,
+				BBCFE5521DEAA7D3003EE6A6 /* search.c */,
+				BBCFE5531DEAA7D3003EE6A6 /* search.h */,
+				BBCFE5551DEABB61003EE6A6 /* token.c */,
+				BBCFE5561DEABB61003EE6A6 /* token.h */,
 			);
 			path = SearchLibrary;
+			sourceTree = "<group>";
+		};
+		BBCF212F1DD352F500666568 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BBCF21301DD352F500666568 /* utarray.h */,
+				BBCF21311DD352F500666568 /* uthash.h */,
+				BBCF21321DD352F500666568 /* utlist.h */,
+				BBCF21331DD352F500666568 /* utstring.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,7 +134,7 @@
 		BBCF211D1DD3527300666568 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = huangjiaxiong;
 				TargetAttributes = {
 					BBCF21241DD3527300666568 = {
@@ -119,7 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBCF213C1DD3577B00666568 /* sl_pinyincode.c in Sources */,
+				BB6D94311DE198D20083638C /* postings.c in Sources */,
+				BBCF21391DD3559900666568 /* search_library.c in Sources */,
+				BBCFE5571DEABB61003EE6A6 /* token.c in Sources */,
+				BBCFE5541DEAA7D3003EE6A6 /* search.c in Sources */,
 				BBCF21291DD3527300666568 /* main.c in Sources */,
+				BBCF21361DD3533600666568 /* util.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +196,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -191,6 +244,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -246,6 +300,7 @@
 				BBCF212E1DD3527300666568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
