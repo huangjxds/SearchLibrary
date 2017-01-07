@@ -47,9 +47,6 @@ int main(int argc, const char * argv[]) {
     
     char *text1 = "陈小小罗姐15521779389";
     slAddDocument(searchLibEnv, 2, text1);
-//
-//    char *text2 = "小王";
-//    slAddDocument(searchLibEnv, 3, text2);
     
     dumpInvertedIndex(searchLibEnv->iiBuffer);
     

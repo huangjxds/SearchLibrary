@@ -18,4 +18,6 @@ int textToPostingsLists(searchLibEnv *env,
                         const int textLen,
                         invertedIndexHash **postings);
 
+
+
 #endif /* token_h */
