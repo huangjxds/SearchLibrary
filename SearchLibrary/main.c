@@ -44,9 +44,6 @@ int main(int argc, const char * argv[]) {
 
     char *text = "小小罗13189230600";
     slAddDocument(searchLibEnv, 1, text);
-   
- //   char *phone = "13189230600";
-  //  slAddDocument(searchLibEnv, 1, phone);
     
     char *text1 = "陈小小罗姐15521779389";
     slAddDocument(searchLibEnv, 2, text1);
